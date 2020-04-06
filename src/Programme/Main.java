@@ -22,7 +22,7 @@ public static void main(String[] args) {
 		
 		 utilisateur.add(Personne.creationUtilisateur());
 		
-		System.out.println("Type de voiture : 1 = Voiture Rapide, 2 = Voiture Lente !");
+		System.out.println("Type de voiture :  \n- 1 = Voiture Rapide, \n- 2 = Voiture Lente !");
 		while( scan.hasNextInt() == false ) {
 			System.out.println("Choisie un nombre entre 1 et 2");
 			scan.next();
@@ -35,17 +35,17 @@ public static void main(String[] args) {
 			
 			 voiture.add(VoitureRapide.creationVoitureRapide());
 			 moteur.add(MoteurRapide.moteurRapide());
-			 System.out.println("Vous voiture commence a roulez avec une certain vitesse, choisisez la vitesse de votre voiture ?");
-			 System.out.println("Attention, selon la vitese choisie vous risque de perdre des pieces...");
+			 System.out.println("Votre voiture commence a rouler..., A quel vitesse voulez vous roulez ?");
+			 System.out.println("Attention, selon la vitesse choisi, vous risquez de perdre des pieces...");
 			 voiture.add(VoitureRapide.PuissanceAccelere());
 			 
 		    break;
 		  case 2:
-			  System.out.println("Vous avez choisie une voiture lente");
+			  System.out.println("Votre choix : Voiture Lente");
 			  voiture.add(VoitureLente.creationVoitureLente());
 			  moteur.add(MoteurLent.moteurLent());
-			  System.out.println("Vous voiture commence a roulez avec une certain vitesse, choisisez la vitesse de votre voiture ?");
-			  System.out.println("Attention, selon la vitese choisie vous avez le droit un boost de vitesse.");
+			  System.out.println("Votre voiture commence a rouler..., A quel vitesse voulez vous roulez ?");
+			  System.out.println("Selon la vitesse choisi, vous aurez le droit à un boost de vitesse.");
 			  voiture.add(VoitureLente.PuissanceAccelere());
 			 
 			  

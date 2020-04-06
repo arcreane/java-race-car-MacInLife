@@ -18,14 +18,14 @@ public class Moteur {
 	  public void initialisationMoteurRapide() {
 		
 			 System.out.println("Votre moteur de voiture est :");
-			 Marque = "moteur thermique";
+			 Marque = "Thermique";
 			
 			System.out.println( Marque );
 	}
 	  public void initialisationMoteurLent() {
 			
 			 System.out.println("Votre moteur de voiture est :");
-			 Marque = "moteur electrique";
+			 Marque = "Electrique";
 			
 			
 			System.out.println( Marque );

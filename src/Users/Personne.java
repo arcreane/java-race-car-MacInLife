@@ -33,7 +33,7 @@ public class Personne {
 
 	private void UtilisateurInfo() {
 		// TODO Auto-generated method stub
-		System.out.println("Ecrit ton prenom et ton nom pour pouvoir commencer le jeu de voiture");
+		System.out.println("Entre ton nom et ton prénom pour commencer à jouer !");
 		 Prenom = scan.next();
 		 Nom = scan.next();
 		 System.out.println("Votre nom est" + "  " + Prenom + "  " + Nom );

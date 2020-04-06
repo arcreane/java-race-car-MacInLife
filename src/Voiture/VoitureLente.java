@@ -1,8 +1,6 @@
 package Voiture;
 import java.util.Scanner;
 
-import org.fusesource.jansi.AnsiConsole;
-
 import Moteur.Moteur;
 import Roues.Roues;
 
