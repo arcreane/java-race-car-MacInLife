@@ -61,13 +61,13 @@ public class Voiture {
 			 
 		    break;
 		  case 2:
-			  Couleur = "JAUNE";
-			  System.out.println( ansi().eraseScreen().fg(YELLOW).a("Votre voiture est : " + Couleur).reset() );
+			  Couleur = "BLANC";
+			  System.out.println( ansi().eraseScreen().fg(Ansi.Color.WHITE).a("Votre voiture est : " + Couleur).reset() );
 			  break;
 			  
 		  case 3:
 			  Couleur = "ROUGE";
-			  System.out.println( ansi().eraseScreen().fg(RED).a("Votre voiture est : " + Couleur).reset() );
+			  System.out.println( ansi().eraseScreen().fg(Ansi.Color.RED).a("Votre voiture est : " + Couleur).reset() );
 			  break;
 		  default:
 			   
@@ -85,7 +85,7 @@ protected void AccelereVoitureRapide() {
 		Puissance = "faible";
 		
 		
-		System.out.println("Votre voiture de couleur "+ Couleur +" à une vitesse de "  + Acceleration + " et une puissance " + Puissance );
+		System.out.println("Votre voiture à une vitesse de "  + Acceleration + " et une puissance " + Puissance );
 		
 		 System.out.println();
          if(Acceleration > 30) {
@@ -110,8 +110,8 @@ protected void AccelereVoitureRapide() {
 				 System.out.println("Merci de taper le nom de la piece a réparer");
 				 String piece = scan.next();
 				 if(piece.equals(piecePerdu)) {
-					 System.out.println(ansi().eraseScreen().fg(GREEN).a("La pièces est desormais réparer"));
-					 System.out.println(ansi().eraseScreen().fg(GREEN).a("La voiture a fini son parcours après 50 km !"));
+					 System.out.println(ansi().eraseScreen().fg(Ansi.Color.GREEN).a("La pièces est desormais réparer"));
+					 System.out.println(ansi().eraseScreen().fg(Ansi.Color.GREEN).a("La voiture a fini son parcours après 50 km !"));
 				 }
 				 else {
 					
@@ -122,7 +122,7 @@ protected void AccelereVoitureRapide() {
 				 while(reponse != 'O' && reponse != 'N' && !piece.equals(piecePerdu))
 				  {
 				   
-				    System.out.println(ansi().eraseScreen().fg(RED).a("Voulez-vous réessayer ? (O/N)"));
+				    System.out.println(ansi().eraseScreen().fg(Ansi.Color.RED).a("Voulez-vous réessayer ? (O/N)"));
 				    reponse = sc.nextLine().charAt(0);
 				   
 				  }
