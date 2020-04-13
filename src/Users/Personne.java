@@ -36,7 +36,7 @@ public class Personne {
 		System.out.println("Entre ton nom et ton prénom pour commencer à jouer !");
 		 Prenom = scan.next();
 		 Nom = scan.next();
-		 System.out.println("Votre nom est" + "  " + Prenom + "  " + Nom );
+		 System.out.println("Votre nom est : " + Prenom + "  " + Nom );
 		
 	}
 }

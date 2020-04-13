@@ -41,9 +41,9 @@ public class Voiture {
 	}
 	
 	public void RemplirVoitureInfo(){
-		 System.out.println("Veuillez écrire le modèle de votre voiture.");
+		 System.out.println("Veuillez taper la marque de votre voiture.");
 		 Nom = scan.next();
-		 System.out.println("La marque de votre véhicule est : " + Nom);
+		 System.out.println("Marque  : " + Nom);
 		 System.out.println("Choisir la couleur de votre voiture :"
 		 		+ "\n- Bleu = 1,"
 		 		+ "\n- Jaune = 2,"
@@ -85,7 +85,7 @@ protected void AccelereVoitureRapide() {
 		Puissance = "faible";
 		
 		
-		System.out.println("Votre voiture de couleur  à une vitesse de "  + Acceleration + " et une puissance " + Puissance );
+		System.out.println("Votre voiture de couleur "+ Couleur +" à une vitesse de "  + Acceleration + " et une puissance " + Puissance );
 		
 		 System.out.println();
          if(Acceleration > 30) {
